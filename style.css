@@ -1,0 +1,27 @@
+.container-fluid {
+  background-color: black;
+  height: 100em;
+  width: 100em;
+}
+
+.text {
+  color: rgb(202, 55, 55);
+  font-size: 100px;
+  font-family: fantasy;
+  justify-content: center;
+}
+
+.selectCharacterText {
+  color: rgb(255, 174, 0);
+  font-family: fantasy;
+}
+
+.characterSelection {
+  justify-content: center;
+  margin-left: 250px;
+}
+
+img {
+  width: 200px;
+  border-radius: 50px;
+}

@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" href = "style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+  <title>Super Tavern Brawl!</title>
+</head>
+
+  <body>
+    <main>
+      <div class = "container-fluid">
+        <header class = "gameName row text-center justify-content d-flex">
+          <div class = "col-12">
+            <h1 class ="text">SUPER TAVERN BRAWL</h1>
+              <h2 class ="selectCharacterText">Select Your Character!</h2>
+          </div>
+        </header>
+        <div class = "characterSelection" id="characterSelection">
+          <a href="#" onclick="Game.setStart('Barbarian')">
+            <img src="WoWOrc.jpg" alt="barbarian">
+              <div>
+                <h3 class ="barbarian">Barbarian</h3>
+                <p>Barbarians have great strength and hit harder.</p>
+              </div>
+          </a>
+          <a href="#" onclick="Game.setStart('Rogue')">
+            <img src="Rogue.jpg" alt="rogue">
+            <div>
+              <h3 class ="rogue">Rogue</h3>
+              <p>Rogues are fast and have high stamina.</p>
+            </div>
+          </a>
+          <a href="#" onclick="Game.setStart('Mage')">
+            <img src="Mage.jpg" alt="mage">
+            <div>
+              <h3 class ="mage">Mage</h3>
+              <p>Mages are able to cast spells to deal damage or heal.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+    <script src = "game.js"></script>
+    <script src = "player.js"></script>
+    <script src = "computer.js"></script>
+</body>
+</html>
