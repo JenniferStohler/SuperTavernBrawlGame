@@ -2,6 +2,7 @@ let Game = {
   setStart: function (classType) {
     this.resetPlayer(classType);
     this.setFight();
+    this.setStartFight();
     this.setGoBack();
   },
   resetPlayer: function (classType) {
@@ -27,6 +28,10 @@ let Game = {
   },
   setGoBack: function () {
     let goBack = document.getElementById("setGoBack");
-    goBack.innerHTML = '<button class="buttonGoBack" onclick="Game.setGoBack()">Back to Character Selection</button>';
+    goBack.innerHTML = '<button class="buttonGoBack" onclick="javascript:location.reload(true)">Back to Character Selection</button>';
+  },
+
+  setStartFight: function () {
+
   }
 }
