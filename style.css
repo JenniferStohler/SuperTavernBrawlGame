@@ -19,9 +19,31 @@
 .characterSelection {
   justify-content: center;
   margin-left: 250px;
+  color: whitesmoke;
 }
 
 img {
   width: 200px;
   border-radius: 50px;
+}
+
+.fightButton {
+  border: none;
+  border-radius: 50px;
+  font-size: 25px;
+  font-family: fantasy;
+  color: black;
+  background-color: green;
+  margin-left: 250px;
+}
+
+.buttonGoBack {
+  border: none;
+  border-radius: 50px;
+  font-size: 25px;
+  font-family: fantasy;
+  color: black;
+  background-color: red;
+  justify-content: center;
+  margin-left: 10px;
 }

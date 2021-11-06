@@ -2,6 +2,7 @@ let Game = {
   setStart: function (classType) {
     this.resetPlayer(classType);
     this.setFight();
+    this.setGoBack();
   },
   resetPlayer: function (classType) {
     switch (classType) {
@@ -16,10 +17,16 @@ let Game = {
         break;
     }
     let getCharacterSelection = document.getElementById("characterSelection");
-     getCharacterSelection.innerHTML = '<p>Health: ' + player.health + '</p>' + '<p>Stamina: ' + player.stamina + '</p>';
+     getCharacterSelection.innerHTML = '<b>' + classType.toUpperCase() + '</b>' + '<p>Health: ' + player.health + '</p>' + '<p>Stamina: ' + player.stamina + '</p>';
     console.log(classType, player.health, player.stamina);
   },
   setFight: function () {
-    
+    // let getHeader = document.getElementById("gameName");
+    let getActions = document.getElementById("actions");
+    getActions.innerHTML = '<button class="fightButton" onclick="Game.setFight()">Start Game!</button>';
+  },
+  setGoBack: function () {
+    let goBack = document.getElementById("setGoBack");
+    goBack.innerHTML = '<button class="buttonGoBack" onclick="Game.setGoBack()">Back to Character Selection</button>';
   }
 }
