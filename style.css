@@ -37,6 +37,10 @@ img {
   margin-left: 250px;
 }
 
+.fightButton:hover {
+  background-color: rgb(9, 80, 9);
+}
+
 .buttonGoBack {
   border: none;
   border-radius: 50px;
@@ -46,4 +50,8 @@ img {
   background-color: red;
   justify-content: center;
   margin-left: 10px;
+}
+
+.buttonGoBack:hover {
+  background-color: rgb(173, 18, 18);
 }
