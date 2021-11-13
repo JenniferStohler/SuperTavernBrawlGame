@@ -1,7 +1,7 @@
 let player;
 
-function Player(classType, health, stamina) {
+function Player(classType, health, mana) {
   this.classType = classType;
   this.health = health;
-  this.stamina = stamina;
+  this.mana = mana;
 }

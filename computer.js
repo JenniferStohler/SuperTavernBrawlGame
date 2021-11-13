@@ -1,7 +1,7 @@
 let computer;
 
-function Computer(enemyType, health, stamina) {
+function Computer(enemyType, health, mana) {
   this.enemyType = enemyType;
   this.health = health;
-  this.stamina = stamina;
+  this.mana = mana;
 }
