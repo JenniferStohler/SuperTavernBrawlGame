@@ -16,7 +16,7 @@ let Game = {
           break;
     }
     let getGenderSelection = document.getElementById("genderSelect");
-    getGenderSelection.innerHTML = '<h3>Which Gender Do You Want to Be?</h3>' + '<button class="Male" onclick=Game.resetGender("Male")>Male</button>' + '<button class="Female" onclick=Game.resetGender("Female")>Female</button>';
+    getGenderSelection.innerHTML = '<h3>Which Gender Do You Want to Be?</h3>' + '<button class="Male" onclick=Game.resetGender("Male")>Male</button>' + '<button class="Female" onclick=Game.resetGender("Female")>Female</button>' + '<p>Gender: ' + genderChoice + '</p>';
     console.log(genderChoice);
       },
       resetPlayer: function (classType) {
